@@ -6,7 +6,7 @@ import joblib
 import matplotlib.pyplot as plt
 
 # --- Load trained model ---
-model_path = r'C:\Users\USER\Desktop\8thrandomforest-1\taxi_rf_model_joblib.pkl'
+model_path = r'D:\sundu\randomforestttt_1\taxi_rf_model_joblib.pkl'
 model = joblib.load(model_path)
 
 # --- App title ---
@@ -14,7 +14,7 @@ st.title("🚖 NYC Taxi Trip Price Predictor")
 st.write("Enter the trip details below to predict the trip price:")
 
 # --- Load CSV for structure (optional, used for dropdowns & ranges) ---
-df = pd.read_csv(r'C:\Users\USER\Desktop\8thrandomforest-1\taxi_trip_pricingR.csv')
+df = pd.read_csv(r'D:\sundu\randomforestttt_1\taxi_trip_pricingR.csv')
 
 # Identify numerical and categorical columns
 num_cols = df.select_dtypes(include='number').columns.drop('Trip_Price')
